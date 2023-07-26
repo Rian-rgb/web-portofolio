@@ -1,10 +1,27 @@
 section{
     padding-top: 128px;
+    position: relative;
+}
+
+section::before{
+    z-index: -1;
+    content: '';
+    font-size: 70px;
+    color: gray;
+    opacity: 0.25;
+    position: absolute;
+    font-weight: 700;
+    top: 10px;
+    left: 10px;
 }
 
 .navbar{
     background-color: white;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-exp-item-detail{
+    display: none;
 }
 
 .home h1{
@@ -20,7 +37,7 @@ section{
     border-radius: 24px;
 }
 
-.btn:hover{
+.btn:hover, .btn.active{
     border: 3px solid black;
     background-color: black;
     color: white;
@@ -28,6 +45,20 @@ section{
 
 .home .arrow img{
     width: 60px;
+}
+
+.about::before{
+    content: 'About';
+}
+
+.about-exp-item{
+    margin-top: 32px;
+}
+
+.about-exp-item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #animasi{
