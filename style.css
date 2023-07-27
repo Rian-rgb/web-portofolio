@@ -1,5 +1,5 @@
 section{
-    padding-top: 128px;
+    padding-top: 113px;
     position: relative;
 }
 
@@ -41,6 +41,10 @@ section::before{
     border: 3px solid black;
     background-color: black;
     color: white;
+}
+
+.home img{
+    width: 100%;
 }
 
 .home .arrow img{
@@ -140,6 +144,19 @@ section::before{
 
 #animasi{
     animation: 2s upDown infinite;
+}
+
+@media only screen and (max-width: 768px){
+
+    .home img{
+       width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    section::before{
+        font-size: 64px;
+    }
 }
 
 @keyframes upDown{
