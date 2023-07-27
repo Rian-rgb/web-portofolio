@@ -121,6 +121,23 @@ section::before{
     grid-area: work-3;
 }
 
+.contact::before{
+    content: 'Contact';
+}
+
+.contact-form{
+    border: 1px solid black;
+    padding: 64px 32px ;
+}
+
+.contact{
+    margin-bottom: 128px;
+}
+
+.form-label{
+    font-weight: 700;
+}
+
 #animasi{
     animation: 2s upDown infinite;
 }
