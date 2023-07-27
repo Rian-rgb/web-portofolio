@@ -159,6 +159,20 @@ section::before{
     }
 }
 
+@media only screen and (max-width: 421px){
+    
+    .items-icon{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 325px){
+    
+    .items-icon{
+        width: 110px;
+    }
+}
+
 @keyframes upDown{
     0%{
         transform: translateY(0);
