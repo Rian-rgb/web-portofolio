@@ -134,6 +134,10 @@ section::before{
     padding: 64px 32px ;
 }
 
+.form-header{
+    margin-top: 34px;
+}
+
 .contact{
     margin-bottom: 128px;
 }
