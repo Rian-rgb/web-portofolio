@@ -52,3 +52,13 @@ function toggleDetail(e){
     
     detail.slideToggle()
 }
+
+function gantiGambar(e){
+    const target = $(e.target)
+    $(target).attr('src', 'images/foto2.png');
+}
+
+function gantiGambars(e){
+    const target = $(e.target)
+    $(target).attr('src', 'images/foto1.png');
+}
