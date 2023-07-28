@@ -1,18 +1,3 @@
-function toggleDetail(e){
-    const target = $(e.target)
-
-    if($(target).hasClass("active")){
-        $(target).html("More Info").removeClass("active")
-    } else {
-        $(target).html("Less Info").addClass("active")
-    }
-
-    const item = $(target).parents(".about-exp-item")
-    const detail = $(item).children(".about-exp-item-detail")
-    
-    detail.slideToggle()
-}
-
 function onSubmit(e){
 
     e.preventDefault()
@@ -29,4 +14,41 @@ function onSubmit(e){
         $(subject).val("")
         alert("Submit Success")
     }
+}
+
+function toggleDropdown(e){
+
+    const target = $(e.target)
+    const item = $(target).parents(".dropdown")
+    const detail = $(item).find(".about-exp-item-header")
+    
+    console.log()
+    detail.slideToggle()
+
+    // if($(target).hasClass("active")){
+    //     $(target).html("More Info").removeClass("active")
+    // } else {
+    //     $(target).html("Less Info").addClass("active")
+    // }
+
+    // const item = $(target).parents(".about-exp-item")
+    // const detail = $(item).children(".about-exp-item-detail")
+    
+    // detail.slideToggle()
+}
+
+function toggleDetail(e){
+    const target = $(e.target)
+
+    if($(target).hasClass("active")){
+        $(target).html("More Info").removeClass("active")
+    } else {
+        $(target).html("Less Info").addClass("active")
+    }
+    const item = $(target).parents(".about-exp-item")
+    const detail = $(item).children(".about-exp-item-detail")
+
+    console.log($(item).children(".about-exp-item-detail"))
+    
+    detail.slideToggle()
 }
