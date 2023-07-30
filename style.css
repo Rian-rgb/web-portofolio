@@ -43,6 +43,14 @@ section::before{
     color: white;
 }
 
+.item-navbar:hover{
+    background-color: gray;
+}
+
+.item-navbar a:hover{
+    color: white;
+}
+
 .home img{
     width: 100%;
 }
@@ -174,6 +182,10 @@ section::before{
     section::before{
         font-size: 64px;
     }
+
+    .items-icon{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 421px){
@@ -185,10 +197,12 @@ section::before{
    
 }
 
-@media only screen and (max-width: 325px){
+@media only screen and (max-width: 338px){
     
     .items-icon{
-        width: 110px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
