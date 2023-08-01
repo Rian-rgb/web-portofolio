@@ -194,6 +194,16 @@ section::before{
         width: 100%;
     }
 
+    .items-icon{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 31;
+    }
+
+    .items-icon a{
+        font-size: 15px;
+    }
    
 }
 
